@@ -1,0 +1,36 @@
+﻿<?xml version="1.0"?>
+<root>
+	<elements>
+				
+		<max_versions>5</max_versions>
+		<images_path>http://inabawy.com/uploadedFiles/</images_path>
+			
+		<server_UI>http://localhost</server_UI>
+		
+		<AkshffeenAdmin>http://localhost/AkshffeenAdmin</AkshffeenAdmin>
+			
+		<account_username1>akshffeen2@gmail.com</account_username1>
+		<account_password1>mailAkshffeen</account_password1>
+		<account_from1>akshffeen1@gmail.com</account_from1>
+		<host1>smtp.gmail.com</host1>
+		<port1>465</port1>	
+		
+		
+		<account_username2>akshffeen1@gmail.com</account_username2>
+		<account_password2>mailAkshffeen</account_password2>
+		<account_from2>akshffeen1@gmail.com</account_from2>
+		<host2>smtp.gmail.com</host2>
+		<port2>465</port2>	
+			
+
+		
+		<account_username3>akshffeen2@gmail.com</account_username3>
+		<account_password3>mailAkshffeen</account_password3>
+		<account_from3>akshffeen1@gmail.com</account_from3>
+		<host3>smtp.gmail.com</host3>
+		<port3>465</port3>	
+		
+		
+			
+	</elements>
+</root>

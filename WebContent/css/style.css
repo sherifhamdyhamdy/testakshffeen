@@ -1,0 +1,333 @@
+/***** font family ******/
+@font-face {
+    font-family: "GE Flow";
+    src: url("GE_Flow_Regular.eot?") format("eot"),url("GE_Flow_Regular.woff") format("woff"),url("GE_Flow_Regular.ttf") format("truetype"),url("GE_Flow_Regular.svg#GEFlow") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/****** home page *******/
+body {
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    font-size: 14px;
+    font-family: "GE Flow";
+    color: #fff;
+}
+
+.mainContainer {
+    margin: auto;
+    width: 1024px;
+    height: 780px;
+    background: url(../img/bg.jpg) no-repeat center top;
+    position: relative;
+}
+
+.header-Home {
+    width: 100%;
+    height: 100px;
+}
+.logo {
+    background: url(../img/logo.jpg) no-repeat center top;
+    width: 280px;
+    height: 100%;
+    float: left;
+}
+
+.nav {
+    width: 740px;
+    height: 100%;
+    float: right;
+}
+
+    .nav ul {
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+        direction: rtl;
+        line-height: 100px;
+    }
+
+        .nav ul li {
+            float: right;
+        }
+
+            .nav ul li a {
+                text-decoration: none;
+                color: #333;
+                padding: 8px;
+            }
+
+                .nav ul li a:hover {
+                    text-decoration: none;
+                    color: #fff;
+                    background-color: #00ccff;
+                    border-radius: 10px;
+                    padding: 8px 8px 5px 8px;
+                }
+/*********** Inner Styles  **********/
+.inner-mainContainer {
+    margin: auto;
+    min-width: 1024px;
+    max-width: 100%;
+    height: 100%;
+    min-height:500px;
+    position: relative;
+    background: url(../img/innerbg3.jpg) repeat-x center top;
+    background-attachment:fixed;
+    color: #fffl;
+}
+
+.inner-nav {
+    width: 100%;
+    height: 50px;
+    background: #00ccff url(../img/innerNavSlice.jpg) repeat-x top center;
+    position: fixed;
+    top: 0px;
+    margin-bottom: 50px;
+}
+
+    .inner-nav ul {
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+        direction: rtl;
+        line-height: 50px;
+        margin-right: 10px;
+    }
+
+        .inner-nav ul li {
+            float: right;
+        }
+
+            .inner-nav ul li a {
+                text-decoration: none;
+                color: #fff;
+                padding: 10px 15px 7px 15px;
+            }
+
+                .inner-nav ul li a:hover {
+                    text-decoration: none;
+                    color: #fff;
+                    background: url(../img/innerNavSliceSC.png) repeat-x top center;
+                }
+
+.active {
+    color: #fff !important;
+    width: 70px;
+    background: url(../img/innerNavSliceSC.png) repeat-x top center;
+}
+
+.inner-leftCorner {
+    width: 260px;
+    min-height: 630px;
+    height:100%;
+    background: #00b9e6;
+    float: left;
+    position:fixed; 
+    bottom:0px;
+    top:120px;
+    
+}
+.inner-leftCornerMenu {
+    width: 260px;
+    float: left;
+}
+
+.inner-mainDataCon {
+    width: auto;
+    height: 100%;
+    margin-left: 261px;
+    margin-top: 50px;
+}
+
+.mainDataConPlaceHolder {
+min-height:400px;
+}
+
+.inner-logo {
+    background: #fff;
+    width: 260px;
+    height: 70px;
+}
+
+h3 {
+    font-size: 18px;
+    padding: 0px;
+    margin: 0px;
+    color: #fff;
+    font-family: "GE Flow";
+}
+
+.unitCell h4 {
+    font-size: 14px;
+    padding: 0px;
+    margin: 0px;
+    color: #666;
+    font-family: Verdana, Geneva, sans-serif;
+    line-height: 40px;
+}
+
+.astyle {
+    color: #fff;
+    text-decoration: none;
+}
+.astyle:hover {
+    color: #036280;
+    text-decoration: underline;
+}
+
+.midCont {
+    width: 60%;
+    float: right;
+}
+
+.searchCell {
+    border-bottom: solid 1px #01c7f1;
+    background: url(img/gridPaletTrans.png) repeat-x top center;
+    width: 100%;
+    clear: both;
+    height: 141px;
+    margin-bottom: 3px;
+}
+
+    .searchCell p {
+        color: #333;
+        padding: 0px;
+        margin: 0px;
+    }
+
+.filterBox {
+    width: 100%;
+    height: 100px;
+}
+
+.searchGrid {
+    text-align: center;
+    height: 545px;
+    margin: auto;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    padding-bottom: 0px;
+    -webkit-overflow-scrolling: touch;
+	 border-bottom: solid 3px #01c7f1;
+	 border-top: solid 3px #01c7f1;
+}
+
+    .searchGrid:hover {
+        text-align: center;
+        margin: auto;
+        overflow-y: overlay;
+        overflow-x: hidden;
+        padding-bottom: 0px;
+        -webkit-overflow-scrolling: touch;
+    }
+
+.unitsHolder {
+    height: 450px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    padding: 5px;
+    margin: 0px 10px 10px 10px;
+    border: solid 1px #01c7f1;
+    -webkit-overflow-scrolling: touch;
+}
+
+    .unitsHolder:hover {
+        overflow-y: overlay;
+        overflow-x: hidden;
+        padding: 5px;
+        margin: 0px 10px 10px 10px;
+        border: solid 1px #01c7f1;
+        -webkit-overflow-scrolling: touch;
+    }
+
+.unitCell {
+    height: 50px;
+    background: url(../img/cellbg.png) repeat-x top center;
+    cursor: pointer;
+    margin-top: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: right;
+}
+
+    .unitCell:hover {
+        background: url(../img/cellbg_sc.png) repeat-x top center;
+        cursor: pointer;
+        margin-top: 3px;
+        padding-left: 5px;
+        padding-right: 5px;
+        text-align: right;
+    }
+
+.unitCell_sc {
+    background: url(../img/cellbg_sc.png) repeat-x top center;
+}
+
+.cellImg {
+    float: left;
+    margin-top: 10px;
+}
+.menuCell {
+    height: 46px;
+    margin: 0px 0px 0px 0px;
+    cursor: pointer;
+    padding: 0px 10px 8px 10px;;
+    text-align: right;
+    display:block;
+    /*background:url('../img/menuSep.png')bottom center no-repeat;*/
+    border-bottom:solid 1px #029ec4; 
+}
+.menuCell:hover {
+    color:#fec942;
+    margin-left:0px;
+    margin-right:0px;
+    /*border-left:solid #fec942 8px;*/
+    background-color:#01748f;
+    background-image:none;
+    
+}
+
+.footer{
+	
+width:100%;
+height: 240px;
+background-color: /*#2dc8fc*/ transparent; 
+clear: both;
+/*border-top: solid #2dc8fc 2px;*/
+}
+/*********** input ******/
+.inputS {
+    background-color: #fff;
+    border: none;
+    color: #333;
+    height: 25px;
+    font-size: 14px;
+    overflow: hidden;
+    text-align: right;
+    /*border-radius: 10px;*/
+}
+
+.inputTxt {
+    background-color: #fff;
+    border: none;
+    color: #666;
+    height: 25px;
+    width: 200px;
+    font-size: 14px;
+    overflow: hidden;
+    text-align: right;
+    padding-right:10px;
+}
+
+.inputBtn {
+    background: #adaeae;
+    border-radius: 10px;
+    width: 70px;
+    height: 30px;
+    color: #fff;
+    font-size: 14px;
+    font-family: "GE Flow";
+}

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+          "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+<session-factory>
+	
+	<property name="connection.url">jdbc:mysql://localhost/akshffeen_test</property>
+	<property name="connection.username">root</property>
+	<property name="connection.password">root</property>
+	
+	<!-- 
+	<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/akshffee_akshffeenDB</property>
+    <property name="hibernate.connection.username">akshffee_dbAdmin</property>
+    <property name="hibernate.connection.password">R#8VWOqQkGlv</property>
+    -->
+	
+	<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+	<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+ 	<property name="transaction.factory_class">org.hibernate.transaction.JDBCTransactionFactory</property>
+    <!--   thread is the short name for
+      org.hibernate.context.ThreadLocalSessionContext
+      and let Hibernate bind the session automatically to the thread
+    -->
+    <property name="current_session_context_class">thread</property>
+    <!--  this will show us all sql statements -->
+    <property name="hibernate.show_sql">true</property>
+    <property name="hibernate.jdbc.batch_size">20</property>
+    <property name="hibernate.cache.use_second_level_cache">false</property>
+
+	<property name="hibernate.connection.useUnicode">true</property>
+	<property name="hibernate.connection.characterEncoding">UTF-8</property> 
+	
+    <!-- Disable the second-level cache  
+    <property name="cache.provider_class">org.hibernate.cache.NoCacheProvider</property>  
+    -->
+    
+    <!-- 
+	<property name="c3p0.min_size">5</property>
+	<property name="c3p0.max_size">20</property>
+	<property name="c3p0.timeout">1800</property>
+	<property name="c3p0.max_statements">50</property>
+	<property name="connection.provider_class">org.hibernate.connection.C3P0ConnectionProvider</property>
+      -->
+    
+   	<property name="hibernate.c3p0.min_size">5</property>
+  	<property name="hibernate.c3p0.max_size">20</property>
+  	<property name="hibernate.c3p0.timeout">300</property>
+  	<property name="hibernate.c3p0.max_statements">50</property>
+  	<property name="hibernate.c3p0.idle_test_period">3000</property>
+    
+	<!-- mapping files -->
+
+    <mapping class="com.sget.akshef.hibernate.entities.ActionsEntity"/>
+    <mapping class="com.sget.akshef.hibernate.entities.ApprovalMsgEntity"/>
+    <mapping class="com.sget.akshef.hibernate.entities.BranchEntity"/>
+    <mapping class="com.sget.akshef.hibernate.entities.BranchGroupsEntity"/>
+    <mapping class="com.sget.akshef.hibernate.entities.CategoryEntity"/>
+    <mapping class="com.sget.akshef.hibernate.entities.CategoryHasSubcategoryEntity"/>
+    <mapping class="com.sget.akshef.hibernate.entities.CityEntity"/>
+    <mapping class="com.sget.akshef.hibernate.entities.ClinicsEntity"/>
+    <mapping class="com.sget.akshef.hibernate.entities.CommentsEntity"/>
+    <mapping class="com.sget.akshef.hibernate.entities.ContentCategoryEntity"/>
+    <mapping class="com.sget.akshef.hibernate.entities.ContentDetailsEntity"/>
+    <mapping class="com.sget.akshef.hibernate.entities.ContentTypesEntity"/>
+    <mapping class="com.sget.akshef.hibernate.entities.CountryEntity"/>
+    <mapping class="com.sget.akshef.hibernate.entities.DaysEntity"/>
+    <mapping class="com.sget.akshef.hibernate.entities.DistricEntity"/>
+    <mapping class="com.sget.akshef.hibernate.entities.DrugsCompanyEntity"/>
+    <mapping class="com.sget.akshef.hibernate.entities.DrugsEntity"/>
+    <mapping class="com.sget.akshef.hibernate.entities.GroupsEntity"/>
+    <mapping class="com.sget.akshef.hibernate.entities.HospitalDataEntity"/>
+    <mapping class="com.sget.akshef.hibernate.entities.InsteadRemedyEntity"/>
+    <mapping class="com.sget.akshef.hibernate.entities.InsuranceCompanyEntity"/>
+    <mapping class="com.sget.akshef.hibernate.entities.MedicalhistoryEntity"/>
+    <mapping class="com.sget.akshef.hibernate.entities.MedicalInstrumentsEntity"/>
+    <mapping class="com.sget.akshef.hibernate.entities.MedicalTourismEntity"/>
+    <mapping class="com.sget.akshef.hibernate.entities.MessagesEntity"/>
+    <mapping class="com.sget.akshef.hibernate.entities.MessagesUnitEntity"/>
+    <mapping class="com.sget.akshef.hibernate.entities.PharmcyEntity"/>
+    <mapping class="com.sget.akshef.hibernate.entities.PriorityEntity"/>
+    <mapping class="com.sget.akshef.hibernate.entities.RadiolgyCenterEntity"/>
+    <mapping class="com.sget.akshef.hibernate.entities.Permission"/>
+    <mapping class="com.sget.akshef.hibernate.entities.ScheduleEntity"/>
+    <mapping class="com.sget.akshef.hibernate.entities.ScheduleHasDaysEntity"/>
+    <mapping class="com.sget.akshef.hibernate.entities.SectionsEntity"/>
+    <mapping class="com.sget.akshef.hibernate.entities.SectionsHasSpecialistEntity"/>
+    <mapping class="com.sget.akshef.hibernate.entities.SpecialistEntity"/>
+    <mapping class="com.sget.akshef.hibernate.entities.SpecialistHasBranchEntity"/>
+    <mapping class="com.sget.akshef.hibernate.entities.SubcategoryEntity"/>
+    <mapping class="com.sget.akshef.hibernate.entities.SubcategoryHasSectionsEntity"/>
+    <mapping class="com.sget.akshef.hibernate.entities.SubcategoryHasSectionsHasBranchEntity"/>
+    <mapping class="com.sget.akshef.hibernate.entities.UnitEntity"/>
+    <mapping class="com.sget.akshef.hibernate.entities.UnitGroupsEntity"/>
+    <mapping class="com.sget.akshef.hibernate.entities.UnitHasInsuranceCompanyEntity"/>
+    <mapping class="com.sget.akshef.hibernate.entities.UserFavoritiesEntity"/>
+    <mapping class="com.sget.akshef.hibernate.entities.UserRateBranchEntity"/>
+    <mapping class="com.sget.akshef.hibernate.entities.UserRateSpecEntity"/>
+    <mapping class="com.sget.akshef.hibernate.entities.UsersEntity"/>
+    <mapping class="com.sget.akshef.hibernate.entities.UsersGroupsEntity"/>
+    <mapping class="com.sget.akshef.hibernate.entities.UsersGroupsEntity"/>
+    <mapping class="com.sget.akshef.hibernate.entities.TempBranchEntity"/>
+    <mapping class="com.sget.akshef.hibernate.entities.DataBaseVersionEntity"/>
+    <mapping class="com.sget.akshef.hibernate.entities.UserRateContentEntity"/>
+    <mapping class="com.sget.akshef.hibernate.entities.ProfessionalExpEntity"/>
+    <mapping class="com.sget.akshef.hibernate.entities.CertificationEntity"/>
+    <mapping class="com.sget.akshef.hibernate.entities.DegreeEntity"/>
+    <mapping class="com.sget.akshef.hibernate.entities.CompanyEntity"/>
+    <mapping class="com.sget.akshef.hibernate.entities.GuestSuggestComplainEntity"/>
+    <mapping class="com.sget.akshef.hibernate.entities.NotificationEntity"/>
+	<mapping class="com.sget.akshef.hibernate.entities.SchedulerQuartz"/>
+	
+	<mapping class="com.sget.akshef.hibernate.entities.Admin"/>
+	<mapping class="com.sget.akshef.hibernate.entities.Doctor_scheduleEntity"/>
+	<mapping class="com.sget.akshef.hibernate.entities.Branch_scheduleEntity"/>
+				
+	<mapping class="com.sget.akshef.hibernate.entities.KeywordTopicEntity"/>
+	<mapping class="com.sget.akshef.hibernate.entities.KeywordCategoryEntity"/>
+	<mapping class="com.sget.akshef.hibernate.entities.KeywordEntity"/>
+	
+	<mapping class="com.sget.akshef.hibernate.entities.DoctorHasKeywordEntity"/>
+	<mapping class="com.sget.akshef.hibernate.entities.BranchHasKeywordEntity"/>
+	<mapping class="com.sget.akshef.hibernate.entities.ContentHasKeywordEntity"/>
+	
+	<mapping class="com.sget.akshef.hibernate.entities.CompanyHasMedicalInsurance"/>
+	<mapping class="com.sget.akshef.hibernate.entities.UnitHasCategory"/>
+
+				
+</session-factory>
+</hibernate-configuration>

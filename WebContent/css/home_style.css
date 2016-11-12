@@ -1,0 +1,284 @@
+@font-face {
+	font-family: customFont;
+	src: url(../fonts/DroidKufi-Regular.woff);
+}
+@font-face {
+	font-family: customFont2;
+	src: url(../fonts/DroidKufi-Bold.woff);
+}
+* {
+	box-sizing: border-box;
+	font-family: customFont !important;
+}
+body {
+	padding: 0px;
+	margin: 0px;
+	text-align: center;
+}
+.mainContainer {
+	margin: auto;
+	width: 1024px;
+	background: url(../img/bg.jpg) no-repeat center top;
+	position: relative;
+}
+.header-Home {
+	width: 100%;
+	height: 100px;
+}
+.logo {
+	background: url(../img/logo.jpg) no-repeat center top;
+	width: 280px;
+	height: 100%;
+	float: left;
+}
+.nav {
+	width: 740px;
+	height: 100%;
+	float: right;
+}
+.nav ul {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	direction: rtl;
+	line-height: 100px;
+}
+.nav ul li {
+	float: right;
+	padding: 5px 0px 5px 14px;
+}
+.nav ul li a {
+	text-decoration: none;
+	color: #333;
+	font-size: 15px;
+}
+.nav ul li a:hover {
+	color: #01C7F1;
+}
+.new_user {
+	position: absolute;
+	width: 100px;
+	height: 50px;
+	top: 160px;
+	left: 50px;
+	text-align: left;
+}
+.new_user a {
+	font-size: 20px;
+	line-height: 30px;
+	text-shadow: 1px 1px 1px #000;
+	color: #fff;
+	text-decoration: none;
+}
+.login_panel_tbl {
+	position: absolute;
+	width: 250px;
+	height: 255px;
+	top: 200px;
+	left: 125px;
+	padding-top: 20px;
+}
+.txt_box {
+	border-radius: 25px;
+	border: solid 1px #55bf2c;
+	width: 185px;
+	height: 25px;
+}
+.mob_Panel {
+	width: 100%;
+	height: 400px;
+	clear: both;
+	margin-top: 570px;
+}
+.for_doc {
+	width: 100%;
+	height: 450px;
+	background: url(../img/doc_slice.jpg) repeat-x top center;
+	position: relative;
+}
+.units_num {
+	position: absolute;
+	bottom: 0px;
+	height: 250px;
+	width: 100%;
+	text-align: center;
+}
+.news_sec {
+	width: 100%;
+	height: 460px;
+	padding:20px;
+}
+.other_sec {
+	width: 100%;
+	height: 520px;
+	padding:20px;
+}
+.subscribe {
+	width: 100%;
+	height: 250px;
+	background-color: #161e2d;
+}
+.num {
+	width: 1024px;
+	margin: auto;
+	height: 150px;
+}
+.footer {
+	width: 100%;
+	height: 200px;
+	background-color: #D1F6FC;
+	padding-top:20px;
+}
+.footer ul {
+	width:940px;
+	margin: 0px auto;
+	padding: 0px;
+	list-style: none;
+	direction: rtl;
+}
+.footer ul li {
+	float: right;
+	padding: 5px 0px 5px 14px;
+}
+.footer ul li a {
+	text-decoration: none;
+	color: #333;
+	font-size: 15px;
+}
+.footer ul li a:hover {
+	color: #01C7F1;
+}
+.content_con{
+	width:230px;
+	height:345px;
+	border: solid 1px #01c7f1;
+	margin:20px;
+	padding:10px;
+	float:right;
+	}
+.img_con{
+	width:100%;
+	height:150px;
+	position:relative;
+	background:#CCC;
+	}
+.client_logo{
+	position:absolute;
+	bottom:0px;
+	left:0px;
+	background-color:#F00;
+	width:50px;
+	height:50px;
+	}
+.content_con p{
+	margin: 0px;
+padding: 0px;
+text-align: right;
+color: #666;
+line-height: 20px;
+font-size: 14px;
+direction: rtl;
+	}
+.rating{
+	width:100%;
+	height:30px;
+	padding:10px;
+	}
+.read{
+	width:100%;
+	height:40px;
+	margin-top:10px;
+	background:#01c7f1;
+	text-align:center;
+	text-decoration: none;
+	color: #fff;
+	font-size: 15px;
+	line-height:40px;
+	display:block;
+	}
+	h1{
+		color:#007aa4;
+		text-align: right;
+padding: 0px;
+margin: 0px;
+font-size:25px;
+		}
+h3{
+		color:#0788a9;
+		text-align: right;
+padding: 0px;
+margin: 0px;
+font-size:15px;
+		}
+.sub_section{
+	width:31.33%;
+	height:100%;
+	text-align:right;
+	float:left;
+	margin-right:2%;
+	}
+.multiple-items{
+	width:95%;
+	margin:auto;
+	}
+.hor_content_con
+{
+	margin-bottom:20px;
+	width:100%;
+	height:130px;
+	}
+.hor_content_con .img_con{
+	width: 31%;
+height: 130px;
+position: relative;
+background: #CCC none repeat scroll 0% 0%;
+float: right;
+	}
+.hor_content_con .client_logo{
+	position:absolute;
+	bottom:0px;
+	left:0px;
+	background-color:#F00;
+	width:40px;
+	height:40px;
+	}
+.hor_content_con .data_con{
+	height: 130px;
+	width:68%;
+	float:left;
+	}
+.hor_content_con .data_con p{
+	margin: 0px;
+padding: 0px;
+text-align: right;
+color: #666;
+line-height: 20px;
+font-size: 14px;
+direction: rtl;
+	}
+.hor_content_con .rating{
+	width:70%;
+	height:30px;
+	padding:10px;
+	float:right;
+	}
+.hor_content_con .read{
+	width:30%;
+	height:30px;
+	margin-top:0px;
+	background:#01c7f1;
+	text-align:center;
+	text-decoration: none;
+	color: #fff;
+	font-size: 15px;
+	line-height:30px;
+	display:block;
+	}
+.hor_con_items{
+	height:450px;
+	overflow:hidden;
+	}
+	.hor_con_items:hover{
+	height:450px;
+	overflow:auto;
+	}

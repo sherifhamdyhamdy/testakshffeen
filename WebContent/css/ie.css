@@ -1,0 +1,29 @@
+img {
+border:none;
+}
+.searchGrid{
+    text-align: center;
+    height: 530px;
+    margin: auto;
+    overflow-y:auto;
+    overflow-x:hidden; 
+    padding-bottom: 0px;
+    -webkit-overflow-scrolling: touch;
+	 border-bottom: solid 3px #01c7f1;
+	 border-top: solid 3px #01c7f1;
+}
+
+.unitsHolder{
+	height:530px;  
+	overflow-y:auto;
+    overflow-x:hidden;
+	padding:5px; 
+	margin: 0px 10px 10px 10px; 
+	border: solid 1px #01c7f1;
+	}
+
+.midCont {
+    width: 59.9%;
+    float: right;
+}
+

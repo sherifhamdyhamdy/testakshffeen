@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faces-config
+    xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-facesconfig_2_0.xsd"
+    version="2.0">
+    
+    <navigation-rule>
+		<description>login to enter the system</description>
+		<from-view-id>/akshf_login.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>profile</from-outcome>
+			<to-view-id>/akshf_profile.xhtml</to-view-id>
+			<redirect />
+		</navigation-case>
+		
+	</navigation-rule>
+	
+	 <navigation-rule>
+		<description>login to enter the system</description>
+		<from-view-id>/akshf_home.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>profile</from-outcome>
+			<to-view-id>/akshf_profile.xhtml</to-view-id>
+			<redirect />
+		</navigation-case>
+		
+	</navigation-rule>
+	
+	<navigation-rule>
+		<description>login to enter the system</description>
+		<from-view-id>/akshf_registration.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>profile</from-outcome>
+			<to-view-id>/akshf_profile.xhtml</to-view-id>
+			<redirect />
+		</navigation-case>
+		
+	</navigation-rule>
+    
+    
+	<managed-bean>
+		<managed-bean-name>loginBean</managed-bean-name>
+		<managed-bean-class>com.sget.akshef.managedbeans.MedLoginBean</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+		<managed-property>
+			<property-name>user</property-name>
+			<property-class>com.sget.akshef.hibernate.beans.UsersBean</property-class>
+			<value>#{user}</value>
+		</managed-property>
+	</managed-bean>
+	
+	
+	
+	<managed-bean>
+		<managed-bean-name>profileBean</managed-bean-name>
+		<managed-bean-class>com.sget.akshef.managedbeans.MedProfileBean</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+	
+	
+
+	<managed-bean>
+		<managed-bean-name>complainBean</managed-bean-name>
+		<managed-bean-class>com.sget.akshef.managedbeans.MedComplainBean</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+	
+	
+	
+	<managed-bean>
+		<managed-bean-name>searchBean</managed-bean-name>
+		<managed-bean-class>com.sget.akshef.managedbeans.MedAdvancedSearchBean</managed-bean-class>
+		<managed-bean-scope>view</managed-bean-scope>
+		</managed-bean>
+		
+	
+	
+	<managed-bean>
+		<managed-bean-name>user</managed-bean-name>
+		<managed-bean-class>com.sget.akshef.hibernate.beans.UsersBean</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+	
+		
+		<managed-bean>
+		<managed-bean-name>messageBean</managed-bean-name>
+		<managed-bean-class>com.sget.akshef.hibernate.beans.MessagesBean</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+
+    <!-- Config here. Can even be kept empty. -->
+
+
+
+<managed-bean>
+		<managed-bean-name>unitBean</managed-bean-name>
+		<managed-bean-class>com.sget.akshef.managedbeans.MedUnitsBean</managed-bean-class>
+		<managed-bean-scope>view</managed-bean-scope>
+	</managed-bean>
+	
+	
+	<managed-bean>
+		<managed-bean-name>specialistRegistration</managed-bean-name>
+		<managed-bean-class>com.sget.akshef.managedbeans.MedSpecialistRegistration</managed-bean-class>
+		<managed-bean-scope>view</managed-bean-scope>
+	</managed-bean>
+	
+	<managed-bean>
+		<managed-bean-name>companyRegistration</managed-bean-name>
+		<managed-bean-class>com.sget.akshef.managedbeans.MedCompanyRegistration</managed-bean-class>
+		<managed-bean-scope>view</managed-bean-scope>
+	</managed-bean>
+	
+	
+	
+<managed-bean>
+	<managed-bean-name>contentBean</managed-bean-name>
+	<managed-bean-class>com.sget.akshef.managedbeans.MedContentBean</managed-bean-class>
+	<managed-bean-scope>view</managed-bean-scope>
+</managed-bean>
+
+<managed-bean>
+	<managed-bean-name>detailsBean</managed-bean-name>
+	<managed-bean-class>com.sget.akshef.managedbeans.MedContentDeatails</managed-bean-class>
+	<managed-bean-scope>request</managed-bean-scope>
+</managed-bean>
+
+
+
+<managed-bean>
+	<managed-bean-name>verificationBean</managed-bean-name>
+	<managed-bean-class>com.sget.akshef.managedbeans.MedVerificationCode</managed-bean-class>
+	<managed-bean-scope>request</managed-bean-scope>
+</managed-bean>
+
+<managed-bean>
+	<managed-bean-name>offersBean</managed-bean-name>
+	<managed-bean-class>com.sget.akshef.managedbeans.MedOffersBean</managed-bean-class>
+	<managed-bean-scope>view</managed-bean-scope>
+</managed-bean>
+
+
+<managed-bean>
+	<managed-bean-name>specialistBean</managed-bean-name>
+	<managed-bean-class>com.sget.akshef.managedbeans.MedSpecialistBean</managed-bean-class>
+	<managed-bean-scope>view</managed-bean-scope>
+</managed-bean>
+
+
+<managed-bean>
+	<managed-bean-name>newsBean</managed-bean-name>
+	<managed-bean-class>com.sget.akshef.managedbeans.MedNewsBean</managed-bean-class>
+	<managed-bean-scope>view</managed-bean-scope>
+</managed-bean>
+
+
+
+
+<managed-bean>
+	<managed-bean-name>articlesBean</managed-bean-name>
+	<managed-bean-class>com.sget.akshef.managedbeans.MedArticleBean</managed-bean-class>
+	<managed-bean-scope>view</managed-bean-scope>
+</managed-bean>
+
+<application>
+		<locale-config>
+			<default-locale>ar</default-locale>
+			<supported-locale>en</supported-locale>
+		</locale-config>
+		<resource-bundle>
+			<base-name>com.sget.akshf.messages.messages</base-name>
+			<var>msg</var>
+		</resource-bundle>
+	</application>
+
+	
+	
+	<application>
+		<locale-config>
+			<default-locale>ar</default-locale>
+			<supported-locale>en</supported-locale>
+		</locale-config>
+		<resource-bundle>
+			<base-name>com.sget.akshf.messages.messages</base-name>
+			<var>msg</var>
+		</resource-bundle>
+	</application>
+
+
+	
+	
+	<!-- Start System Admin Managed Beans -->
+	<managed-bean>
+		<managed-bean-name>categoryControllerAdd</managed-bean-name>
+		<managed-bean-class>com.sget.akshef.view.CategoryControllerAdd</managed-bean-class>
+		<managed-bean-scope>view</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>categoryControllerAll</managed-bean-name>
+		<managed-bean-class>com.sget.akshef.view.CategoryControllerAll</managed-bean-class>
+		<managed-bean-scope>view</managed-bean-scope>
+	</managed-bean>
+
+	<managed-bean>
+		<managed-bean-name>subCategoryControllerAll</managed-bean-name>
+		<managed-bean-class>com.sget.akshef.view.SubCategoryControllerAll</managed-bean-class>
+		<managed-bean-scope>view</managed-bean-scope>
+	</managed-bean>
+	
+	<managed-bean>
+	<managed-bean-name>subCategoryControllerAdd</managed-bean-name>
+		<managed-bean-class>com.sget.akshef.view.SubCategoryControllerAdd</managed-bean-class>
+		<managed-bean-scope>view</managed-bean-scope>
+	
+	
+	</managed-bean>
+	
+	
+	<managed-bean>
+		<managed-bean-name>sectionControllerAll</managed-bean-name>
+		<managed-bean-class>com.sget.akshef.view.SectionControllerAll</managed-bean-class>
+		<managed-bean-scope>view</managed-bean-scope>
+	</managed-bean> 
+	<managed-bean>
+		<managed-bean-name>actionControllerAll</managed-bean-name>
+		<managed-bean-class>com.sget.akshef.view.ActionControllerAll</managed-bean-class>
+		<managed-bean-scope>view</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>actionControllerAdd</managed-bean-name>
+		<managed-bean-class>com.sget.akshef.view.ActionControllerAdd</managed-bean-class>
+		<managed-bean-scope>view</managed-bean-scope>
+	</managed-bean>
+		 
+	<managed-bean>
+		<managed-bean-name>cityControllerAll</managed-bean-name>
+		<managed-bean-class>com.sget.akshef.view.CityControllerAll</managed-bean-class>
+		<managed-bean-scope>view</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>cityControllerAdd</managed-bean-name>
+		<managed-bean-class>com.sget.akshef.view.CityControllerAdd</managed-bean-class>
+		<managed-bean-scope>view</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>contentCategoryControllerAll</managed-bean-name>
+		<managed-bean-class>com.sget.akshef.view.ContentCategoryControllerAll</managed-bean-class>
+		<managed-bean-scope>view</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>contentCategoryControllerAdd</managed-bean-name>
+		<managed-bean-class>com.sget.akshef.view.ContentCategoryControllerAdd</managed-bean-class>
+		<managed-bean-scope>view</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>contentTypeControllerAll</managed-bean-name>
+		<managed-bean-class>com.sget.akshef.view.ContentTypeControllerAll</managed-bean-class>
+		<managed-bean-scope>view</managed-bean-scope>
+	</managed-bean>
+	
+	<managed-bean>
+		<managed-bean-name>contentTypeControllerAdd</managed-bean-name>
+		<managed-bean-class>com.sget.akshef.view.ContentTypeControllerAdd</managed-bean-class>
+		<managed-bean-scope>view</managed-bean-scope>
+	</managed-bean>
+	
+	<managed-bean>
+		<managed-bean-name>countryControllerAll</managed-bean-name>
+		<managed-bean-class>com.sget.akshef.view.CountryControllerAll</managed-bean-class>
+		<managed-bean-scope>view</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>countryControllerAdd</managed-bean-name>
+		<managed-bean-class>com.sget.akshef.view.CountryControllerAdd</managed-bean-class>
+		<managed-bean-scope>view</managed-bean-scope>
+	</managed-bean>
+	
+		<managed-bean>
+		<managed-bean-name>sectionsControllerAdd</managed-bean-name>
+		<managed-bean-class>com.sget.akshef.view.SectionsControllerAdd</managed-bean-class>
+		<managed-bean-scope>view</managed-bean-scope>
+	</managed-bean>
+	
+	<managed-bean>
+		<managed-bean-name>insuranceCompanyControllerAll</managed-bean-name>
+		<managed-bean-class>com.sget.akshef.view.InsuranceCompanyControllerAll</managed-bean-class>
+		<managed-bean-scope>view</managed-bean-scope>
+	</managed-bean>
+	
+		<managed-bean>
+		<managed-bean-name>insuranceCompanyControllerAdd</managed-bean-name>
+		<managed-bean-class>com.sget.akshef.view.InsuranceCompanyControllerAdd</managed-bean-class>
+		<managed-bean-scope>view</managed-bean-scope>
+	</managed-bean>
+	
+	<managed-bean>
+		<managed-bean-name>messageTypeControllerAll</managed-bean-name>
+		<managed-bean-class>com.sget.akshef.view.MessageTypeControllerAll</managed-bean-class>
+		<managed-bean-scope>view</managed-bean-scope>
+	</managed-bean>
+		<managed-bean>
+		<managed-bean-name>messageTypeControllerAdd</managed-bean-name>
+		<managed-bean-class>com.sget.akshef.view.MessageTypeControllerAdd</managed-bean-class>
+		<managed-bean-scope>view</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>priorityControllerAll</managed-bean-name>
+		<managed-bean-class>com.sget.akshef.view.PriorityControllerAll</managed-bean-class>
+		<managed-bean-scope>view</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>priorityControllerAdd</managed-bean-name>
+		<managed-bean-class>com.sget.akshef.view.PriorityControllerAdd</managed-bean-class>
+		<managed-bean-scope>view</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>roleControllerAll</managed-bean-name>
+		<managed-bean-class>com.sget.akshef.view.RoleControllerAll</managed-bean-class>
+		<managed-bean-scope>view</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>roleControllerAdd</managed-bean-name>
+		<managed-bean-class>com.sget.akshef.view.RoleControllerAdd</managed-bean-class>
+		<managed-bean-scope>view</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>specialistControllerAll</managed-bean-name>
+		<managed-bean-class>com.sget.akshef.view.SpecialistControllerAll</managed-bean-class>
+		<managed-bean-scope>view</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>specialistControllerAdd</managed-bean-name>
+		<managed-bean-class>com.sget.akshef.view.SpecialistControllerAdd</managed-bean-class>
+		<managed-bean-scope>view</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>unitControllerAll</managed-bean-name>
+		<managed-bean-class>com.sget.akshef.view.UnitControllerAll</managed-bean-class>
+		<managed-bean-scope>view</managed-bean-scope>
+	</managed-bean>
+	
+	 
+	
+	<managed-bean>
+		<managed-bean-name>groupControllerAll</managed-bean-name>
+		<managed-bean-class>com.sget.akshef.view.GroupControllerAll</managed-bean-class>
+		<managed-bean-scope>view</managed-bean-scope>
+	</managed-bean>
+	
+		<managed-bean>
+		<managed-bean-name>groupControllerAdd</managed-bean-name>
+		<managed-bean-class>com.sget.akshef.view.GroupControllerAdd</managed-bean-class>
+		<managed-bean-scope>view</managed-bean-scope>
+	</managed-bean>
+	
+	<managed-bean>
+		<managed-bean-name>contentDetailControllerAll</managed-bean-name>
+		<managed-bean-class>com.sget.akshef.view.ContentDetailControllerAll</managed-bean-class>
+		<managed-bean-scope>view</managed-bean-scope>
+	</managed-bean>
+	
+	<managed-bean>
+		<managed-bean-name>contentDetailsControllerAdd</managed-bean-name>
+		<managed-bean-class>com.sget.akshef.view.ContentDetailsControllerAdd</managed-bean-class>
+		<managed-bean-scope>view</managed-bean-scope>
+	</managed-bean>
+	
+	<managed-bean>
+		<managed-bean-name>districControllerAll</managed-bean-name>
+		<managed-bean-class>com.sget.akshef.view.DistricControllerAll</managed-bean-class>
+		<managed-bean-scope>view</managed-bean-scope>
+	</managed-bean>
+		<managed-bean>
+		<managed-bean-name>districControllerAdd</managed-bean-name>
+		<managed-bean-class>com.sget.akshef.view.DistricControllerAdd</managed-bean-class>
+		<managed-bean-scope>view</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>branchControllerAll</managed-bean-name>
+		<managed-bean-class>com.sget.akshef.view.BranchControllerAll</managed-bean-class>
+		<managed-bean-scope>view</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>branchControllerAdd</managed-bean-name>
+		<managed-bean-class>com.sget.akshef.view.BranchControllerAdd</managed-bean-class>
+		<managed-bean-scope>view</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>addCont</managed-bean-name>
+		<managed-bean-class>com.sget.akshef.view.ContControllerAdd</managed-bean-class>
+		<managed-bean-scope>view</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>sendNotif</managed-bean-name>
+		<managed-bean-class>com.sget.akshef.view.SendAndroidNotifications</managed-bean-class>
+		<managed-bean-scope>view</managed-bean-scope>
+	</managed-bean>	
+	<!-- End System Admin Managed Beans -->
+	<!-- JDeeb Application bundles -->	
+	<application>
+	   <locale-config>
+	      <default-locale>en</default-locale>
+	   </locale-config>
+	   <resource-bundle>
+	      <base-name>com.sget.akshef.hibernate.i18n.backend_messages</base-name>
+	      <var>backMsg</var>
+	   </resource-bundle>
+	</application>
+	<application>
+        <resource-bundle>
+            <base-name>com.sget.akshef.hibernate.i18n.admin</base-name>
+            <var>msg</var>
+        </resource-bundle>
+	</application>
+	<!-- Branch Managed Beans -->
+	<managed-bean>
+		<managed-bean-name>userPriv</managed-bean-name>
+		<managed-bean-class>com.sget.akshef.view.admin.UserPrivilege</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>groupPermiss</managed-bean-name>
+		<managed-bean-class>com.sget.akshef.view.GroupPermissionControl</managed-bean-class>
+		<managed-bean-scope>view</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>branchManag</managed-bean-name>
+		<managed-bean-class>com.sget.akshef.view.admin.branch.BranchManagement</managed-bean-class>
+		<managed-bean-scope>view</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>branchDetails</managed-bean-name>
+		<managed-bean-class>com.sget.akshef.view.admin.branch.BranchDetails</managed-bean-class>
+		<managed-bean-scope>view</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>allCont</managed-bean-name>
+		<managed-bean-class>com.sget.akshef.view.admin.branch.ContentsAll</managed-bean-class>
+		<managed-bean-scope>view</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>offersCont</managed-bean-name>
+		<managed-bean-class>com.sget.akshef.view.admin.branch.OffersContent</managed-bean-class>
+		<managed-bean-scope>view</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>tipsCont</managed-bean-name>
+		<managed-bean-class>com.sget.akshef.view.admin.branch.TipsContent</managed-bean-class>
+		<managed-bean-scope>view</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>contGroup</managed-bean-name>
+		<managed-bean-class>com.sget.akshef.view.admin.branch.BranchGroups</managed-bean-class>
+		<managed-bean-scope>view</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>branComment</managed-bean-name>
+		<managed-bean-class>com.sget.akshef.view.admin.branch.BranchComments</managed-bean-class>
+		<managed-bean-scope>view</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>dbVersionAdd</managed-bean-name>
+		<managed-bean-class>com.sget.akshef.view.UploadDBVersion</managed-bean-class>
+		<managed-bean-scope>view</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>guestSuggComp</managed-bean-name>
+		<managed-bean-class>com.sget.akshef.view.GuestSuggComp</managed-bean-class>
+		<managed-bean-scope>view</managed-bean-scope>
+	</managed-bean>
+	
+	
+	<!-- JDeeb End App -->
+	
+	<!-- liliane 25-11 -->
+	
+	
+	<managed-bean>
+		<managed-bean-name>tempBranchControllerAll</managed-bean-name>
+		<managed-bean-class>com.sget.akshef.view.BranchTempControllerAll</managed-bean-class>
+		<managed-bean-scope>view</managed-bean-scope>
+	</managed-bean>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</faces-config>
